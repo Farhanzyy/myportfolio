@@ -1,13 +1,11 @@
-/* styles.css */
 
-/* Reset dasar */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling umum */
+/* Body */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -17,28 +15,28 @@ body {
 
 /* Header */
 header {
-    background: #004d40; /* Warna latar belakang header */
+    background: #004d40; 
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .header-content {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Optional: to constrain width */
-    margin: 0 auto; /* Center align if max-width is used */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .header-content h1 {
     font-size: 2rem;
-    margin-right: auto; /* Push navbar to the right */
+    margin-right: auto; 
 }
-
+/*  navbar t */
 nav ul {
     list-style: none;
     padding: 0;
@@ -56,22 +54,21 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
-    padding: 0.5rem 1rem; /* Ruang di dalam tautan */
+    padding: 0.5rem 1rem; 
     border-radius: 5px;
-    transition: background 0.3s, color 0.3s; /* Efek transisi saat hover */
+    transition: background 0.3s, color 0.3s; 
 }
 
 nav a:hover {
-    background: #00796b; /* Warna latar belakang saat hover */
+    background: #00796b;
     color: #fff;
 }
 
-/* Main content */
+
 main {
     padding: 2rem;
 }
 
-/* Profile section */
 .profile {
     display: flex;
     align-items: center;
@@ -89,7 +86,7 @@ main {
     margin: 0.5rem 0;
 }
 
-/* Education and Experience sections */
+
 section {
     margin-bottom: 2rem;
 }
@@ -104,7 +101,7 @@ li {
 
 /* Footer */
 footer {
-    background: #004d40; /* Sama dengan warna header */
+    background: #004d40; 
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -113,7 +110,6 @@ footer {
     bottom: 0;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -122,7 +118,7 @@ footer {
 
     .header-content {
         width: 100%;
-        justify-content: flex-start; /* Letakkan header-content di kiri */
+        justify-content: flex-start;
     }
 
     nav ul {
