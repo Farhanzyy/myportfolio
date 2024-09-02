@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* Reset dasar */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling umum */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #004d40; /* Warna latar belakang header */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Optional: to constrain width */
+    margin: 0 auto; /* Center align if max-width is used */
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin-right: auto; /* Push navbar to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem; /* Ruang antara item navbar */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem; /* Ruang di dalam tautan */
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s; /* Efek transisi saat hover */
+}
+
+nav a:hover {
+    background: #00796b; /* Warna latar belakang saat hover */
+    color: #fff;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+}
+
+.profile-details p {
+    margin: 0.5rem 0;
+}
+
+/* Education and Experience sections */
+section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #004d40; /* Sama dengan warna header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content {
+        width: 100%;
+        justify-content: flex-start; /* Letakkan header-content di kiri */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
